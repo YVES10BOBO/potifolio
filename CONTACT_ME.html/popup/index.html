@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+</head>
+<link rel="stylesheet" href="./styles.css">
+<body>
+    
+    <div class="container">
+        <div style="border: 2 solid salmon; background-color: rgb(12, 68, 68); text-align: center;">
+            <h2>did you you make sure that you are going to send <br> good and correct   information??</h2>
+
+            <button type="submit" class="btn" onclick="openPopup()">yes</button>
+        </div>
+       
+        <div class="popup" id="popup">
+            <img src="./images/tick.png" alt="">
+            <h2>Thank you</h2>
+            <p> your details has beeen successifuly submitted. thanks!</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+
+    </div>
+    <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup");
+ 
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+
+        }
+        
+        
+    </script> 
+</body>
+</html>
