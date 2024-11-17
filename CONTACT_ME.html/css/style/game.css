@@ -1,0 +1,106 @@
+/* Colors */
+:root {
+    --color-body: #b6cbce;
+    --color-heading: #eef3db;
+    --color-base: #033f47;
+    --color-base2: #022a30;
+    --color-brand: #e0f780;
+    --color-brand2: #deff58;
+    --sidebar-width: 240px;
+    --font-base: "Bai Jamjuree";
+    background: #022a30;
+    --text-brand: #fffafa;
+    --sidebar-width: 240px;
+
+}
+
+bg-base{
+    background-color: var(--color-base);
+}
+
+
+/* Typography */
+body {
+    font-family: var(--font-base), sans-serif;
+    color:var(--text-brand);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-brand2);
+    font-weight: 700;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--color-brand);
+}
+
+/* Buttons */
+.btn {
+    /* Define button styles */
+}
+
+.btn-brand {
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: var(--color-base);
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: var(--color-brand2);
+    color: var(--color-base);
+    border-color: var(--color-brand2);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--color-base);
+    /* Additional navbar styles */
+}
+
+.navbar .navlink {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar .navlink:hover {
+    color: var(--color-brand);
+}
+
+/* Cards */
+.card-custom .card-custom-image {
+    /* Card image styles */
+}
+
+.card-custom .card-custom-image img {
+    /* Card image hover effect */
+}
+
+/* Contact Form */
+#contact .form-control {
+    background-color: var(--color-base);
+    border-color: var(--color-base);
+    color: var(--color-body);
+}
+
+#contact .form-control:focus {
+    border-color: var(--color-brand);
+    box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+    color: var(--color-body);
+}
+
+/* Social Icons */
+.social-icons a {
+    /* Social icon styles */
+}
